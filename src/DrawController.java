@@ -15,9 +15,10 @@ public class DrawController {
     private Canvas canvas;
     private final ArrayList<PenStroke> penStrokes = new ArrayList<>();
     private final int size = 10;
+    private Color color;
     @FXML
     public void draw(MouseEvent e) {
-        PenStroke square = new PenStroke(new Point2D(e.getX(), e.getY()), canvas.getGraphicsContext2D().getStroke());
+        PenStroke square = new PenStroke(new Point2D(e.getX(), e.getY()), color);
         drawSquare(square);
         penStrokes.add(square);
     }

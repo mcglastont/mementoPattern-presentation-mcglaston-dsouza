@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
+<?import javafx.scene.control.RadioMenuItem?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrawController">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
@@ -27,6 +28,14 @@
                     <MenuItem mnemonicParsing="false" text="Delete" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="Color">
+                      <items>
+                              <MenuItem id="colorBlack" mnemonicParsing="false" text="Black"/>
+                              <MenuItem id="colorRed" mnemonicParsing="false" text="Red"/>
+                              <MenuItem id="colorBlue" mnemonicParsing="false" text="Blue"/>
+                              <MenuItem id="colorYellow" mnemonicParsing="false" text="Yellow"/>
+                      </items>
+                  </Menu>
               </menus>
             </MenuBar>
             <Canvas fx:id="canvas" height="400.0" onMouseDragged="#draw" onMousePressed="#saveCanvas" width="600.0" />
