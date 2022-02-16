@@ -1,13 +1,12 @@
 import javafx.geometry.Point2D;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 
 public class PenStroke {
 
     private final Point2D location;
-    private final Paint color;
+    private final Color color;
 
-    public PenStroke(Point2D location, Paint color) {
+    public PenStroke(Point2D location, Color color) {
         this.location = location;
         this.color = color;
     }
@@ -16,7 +15,7 @@ public class PenStroke {
         return location;
     }
 
-    public Paint getColor() {
+    public Color getColor() {
         return color;
     }
 
